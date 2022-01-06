@@ -35,12 +35,10 @@ namespace BTL_WinDow
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.txtTieuDe = new System.Windows.Forms.TextBox();
             this.txtNhaPH = new System.Windows.Forms.TextBox();
             this.txtTacGia = new System.Windows.Forms.TextBox();
             this.txtGiaBan = new System.Windows.Forms.TextBox();
-            this.txtSLC = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.lbSL = new System.Windows.Forms.Label();
             this.dgvSach = new System.Windows.Forms.DataGridView();
@@ -126,19 +124,6 @@ namespace BTL_WinDow
             this.label6.TabIndex = 5;
             this.label6.Text = "Giá bán:";
             // 
-            // label7
-            // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Blue;
-            this.label7.Location = new System.Drawing.Point(305, 149);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(87, 17);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Số lượng có:";
-            // 
             // txtTieuDe
             // 
             this.txtTieuDe.Location = new System.Drawing.Point(148, 83);
@@ -172,15 +157,6 @@ namespace BTL_WinDow
             this.txtGiaBan.Name = "txtGiaBan";
             this.txtGiaBan.Size = new System.Drawing.Size(143, 20);
             this.txtGiaBan.TabIndex = 11;
-            // 
-            // txtSLC
-            // 
-            this.txtSLC.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSLC.Location = new System.Drawing.Point(410, 146);
-            this.txtSLC.Margin = new System.Windows.Forms.Padding(2);
-            this.txtSLC.Name = "txtSLC";
-            this.txtSLC.Size = new System.Drawing.Size(143, 20);
-            this.txtSLC.TabIndex = 12;
             // 
             // label8
             // 
@@ -380,12 +356,10 @@ namespace BTL_WinDow
             this.Controls.Add(this.lbSL);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnThoat);
-            this.Controls.Add(this.txtSLC);
             this.Controls.Add(this.txtGiaBan);
             this.Controls.Add(this.txtTacGia);
             this.Controls.Add(this.txtNhaPH);
             this.Controls.Add(this.txtTieuDe);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -415,12 +389,10 @@ namespace BTL_WinDow
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtTieuDe;
         private System.Windows.Forms.TextBox txtNhaPH;
         private System.Windows.Forms.TextBox txtTacGia;
         private System.Windows.Forms.TextBox txtGiaBan;
-        private System.Windows.Forms.TextBox txtSLC;
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label lbSL;
