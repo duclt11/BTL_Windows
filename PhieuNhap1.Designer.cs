@@ -1,7 +1,7 @@
 ﻿
 namespace BTL_WinDow
 {
-    partial class PhieuNhap
+    partial class PhieuNhap1
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace BTL_WinDow
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PhieuNhap));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PhieuNhap1));
             this.cbNCC = new System.Windows.Forms.ComboBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
@@ -177,7 +177,7 @@ namespace BTL_WinDow
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // PhieuNhap
+            // PhieuNhap1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -197,7 +197,7 @@ namespace BTL_WinDow
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.cbNCC);
-            this.Name = "PhieuNhap";
+            this.Name = "PhieuNhap1";
             this.Text = "PhieuNhap";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

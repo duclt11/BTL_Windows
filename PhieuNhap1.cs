@@ -10,11 +10,8 @@ using System.Windows.Forms;
 
 namespace BTL_WinDow
 {
-    public partial class PhieuNhap : Form
+    public partial class PhieuNhap1 : Form
     {
-        public PhieuNhap()
-        {
-            InitializeComponent();
-        }
+        
     }
 }

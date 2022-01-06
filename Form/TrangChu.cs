@@ -119,5 +119,15 @@ namespace BTL_WinDow
         {
             CreateNewTabControl("Phiếu nhập", new QuanLyPhieuNhap());
         }
+
+        private void rbtQLTK_Click(object sender, EventArgs e)
+        {
+            if (DangNhap.NguoiDangNhap.isAdmin == false)
+            {
+                MessageBox.Show("Bạn không có quyền thực hiện chức năng này", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                return;
+            }
+            CreateNewTabControl("Danh sach nhan vien", new QuanLiTaiKhoan());
+        }
     }
 }

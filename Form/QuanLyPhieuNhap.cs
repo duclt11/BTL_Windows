@@ -17,15 +17,7 @@ namespace BTL_WinDow
         public QuanLyPhieuNhap()
         {
             InitializeComponent();
-            if (DangNhap.NguoiDangNhap.isAdmin == false)
-            {
-                lbHoTen.Text = DangNhap.NguoiDangNhap.HoTen;
-            }
-            else
-            {
-                lbHoTen.Text = DangNhap.NguoiDangNhap.TenDangNhap;
-            }
-           
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -95,9 +87,7 @@ namespace BTL_WinDow
         {
             var phieuNhap = db.PhieuNhaps.ToList();
             var NCC = db.XuongNhaps.ToList();
-            CBBNhaCC.DataSource = NCC;
-            CBBNhaCC.DisplayMember = "TenXN";
-            CBBNhaCC.ValueMember = "MaXN";
+           
             foreach (DataGridViewColumn col in dgvPhieuNhap.Columns)
             {
                 col.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
@@ -107,9 +97,7 @@ namespace BTL_WinDow
         }
         private void Clear()
         {
-            CBBNhaCC.SelectedIndex = 0;
-            DTNgayNhap.Value = DateTime.Now;
-            txtGhiChu.Text = "";
+            
         }
         private void LoadData(List<PhieuNhap> phieuNhaps)
         {
@@ -144,14 +132,7 @@ namespace BTL_WinDow
             {
                 PhieuNhap phieuNhap = new PhieuNhap();
                 phieuNhap.MaNV = DangNhap.NguoiDangNhap.MaNV;
-                if (CBBNhaCC.SelectedValue== null)
-                {
-                    MessageBox.Show(this, "Vui lòng chọn giá trị đúng trong combobox!", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
-                phieuNhap.MaXN = int.Parse(CBBNhaCC.SelectedValue.ToString());
-                phieuNhap.GhiChu = txtGhiChu.Text;
-                phieuNhap.NgayNhap = DTNgayNhap.Value;
+                
                 db.PhieuNhaps.Add(phieuNhap);
                 db.SaveChanges();
                 MessageBox.Show(this, "Thêm phiếu nhập thành công, vui lòng nhập chi tiết...", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -171,11 +152,7 @@ namespace BTL_WinDow
 
         private void dgvPhieuNhap_SelectionChanged(object sender, EventArgs e)
         {
-            DTNgayNhap.Text = dgvPhieuNhap.CurrentRow.Cells["NgayNhap"].FormattedValue.ToString();
-            var n = dgvPhieuNhap.CurrentRow.Cells["TenNCC"].FormattedValue.ToString();
-            var xn = db.XuongNhaps.FirstOrDefault(x => x.TenXN == n);
-            CBBNhaCC.SelectedItem =xn;
-            txtGhiChu.Text = dgvPhieuNhap.CurrentRow.Cells["GhiChu"].FormattedValue.ToString();
+           
         }
 
         private void btnSuaChiTiet_Click(object sender, EventArgs e)
