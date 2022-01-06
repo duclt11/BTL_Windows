@@ -42,7 +42,7 @@ namespace BTL_WinDow
             DTNgayPH.Value = DateTime.Now;
             txtTacGia.Text = "";
             txtGiaBan.Text = "";
-            txtSLC.Text = "";
+            //txtSLC.Text = "";
             ActiveControl = txtTieuDe;
 
         }
@@ -88,7 +88,7 @@ namespace BTL_WinDow
                 try
                 {
                     s.GiaBan = int.Parse(txtGiaBan.Text);
-                    s.SoLuongCo = int.Parse(txtSLC.Text);
+                   // s.SoLuongCo = int.Parse(txtSLC.Text);
                 }
                 catch
                 {
@@ -128,7 +128,7 @@ namespace BTL_WinDow
             DTNgayPH.Text = dgvSach.CurrentRow.Cells["NgayPH"].FormattedValue.ToString();
             txtTacGia.Text = dgvSach.CurrentRow.Cells["tacGia"].FormattedValue.ToString();
             txtGiaBan.Text = dgvSach.CurrentRow.Cells["giaBan"].FormattedValue.ToString();
-            txtSLC.Text = dgvSach.CurrentRow.Cells["SLC"].FormattedValue.ToString();
+           // txtSLC.Text = dgvSach.CurrentRow.Cells["SLC"].FormattedValue.ToString();
         }
 
         private void btnSua_Click(object sender, EventArgs e)
@@ -164,7 +164,7 @@ namespace BTL_WinDow
                     try
                     {
                         s.GiaBan = int.Parse(txtGiaBan.Text);
-                        s.SoLuongCo = int.Parse(txtSLC.Text);
+                       // s.SoLuongCo = int.Parse(txtSLC.Text);
                     }
                     catch
                     {

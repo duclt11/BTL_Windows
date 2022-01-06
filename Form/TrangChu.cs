@@ -117,7 +117,7 @@ namespace BTL_WinDow
 
         private void rbtNhapKho_Click(object sender, EventArgs e)
         {
-            CreateNewTabControl("Phiếu nhập", new QuanLyPhieuNhap());
+            CreateNewTabControl("Thêm phiếu nhập", new ThemPhieuNhap());
         }
 
         private void rbtQLTK_Click(object sender, EventArgs e)
@@ -128,6 +128,16 @@ namespace BTL_WinDow
                 return;
             }
             CreateNewTabControl("Danh sach nhan vien", new QuanLiTaiKhoan());
+        }
+
+        private void rbtBanLe_Click(object sender, EventArgs e)
+        {
+            CreateNewTabControl("Hóa đơn", new ThemHoaDon());
+        }
+
+        private void rbtDSPN_Click(object sender, EventArgs e)
+        {
+            CreateNewTabControl("Danh sách phiếu nhập", new QuanLyPhieuNhap());
         }
     }
 }

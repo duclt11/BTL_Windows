@@ -130,17 +130,17 @@ namespace BTL_WinDow
         {
             try
             {
-                PhieuNhap phieuNhap = new PhieuNhap();
-                phieuNhap.MaNV = DangNhap.NguoiDangNhap.MaNV;
+                //PhieuNhap phieuNhap = new PhieuNhap();
+                //phieuNhap.MaNV = DangNhap.NguoiDangNhap.MaNV;
                 
-                db.PhieuNhaps.Add(phieuNhap);
-                db.SaveChanges();
-                MessageBox.Show(this, "Thêm phiếu nhập thành công, vui lòng nhập chi tiết...", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                var phieuNhaps = db.PhieuNhaps.Include("NhanVien").ToList();
-                int id = db.PhieuNhaps.Max(p => p.SoPN);
+                //db.PhieuNhaps.Add(phieuNhap);
+                //db.SaveChanges();
+                //MessageBox.Show(this, "Thêm phiếu nhập thành công, vui lòng nhập chi tiết...", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //var phieuNhaps = db.PhieuNhaps.Include("NhanVien").ToList();
+                //int id = db.PhieuNhaps.Max(p => p.SoPN);
                 
-                new CapNhatChiTietPhieuNhap(id).ShowDialog();
-               
+                //new CapNhatChiTietPhieuNhap(id).ShowDialog();
+                new ThemPhieuNhap().Show();
 
             }
             catch (Exception ex)

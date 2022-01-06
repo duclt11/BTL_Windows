@@ -231,6 +231,7 @@ namespace BTL_WinDow
             this.rbtDSPN.Name = "rbtDSPN";
             this.rbtDSPN.SmallImage = ((System.Drawing.Image)(resources.GetObject("rbtDSPN.SmallImage")));
             this.rbtDSPN.Text = "Danh sách phiếu nhập";
+            this.rbtDSPN.Click += new System.EventHandler(this.rbtDSPN_Click);
             // 
             // rbtBanLe
             // 
@@ -240,6 +241,7 @@ namespace BTL_WinDow
             this.rbtBanLe.Name = "rbtBanLe";
             this.rbtBanLe.SmallImage = ((System.Drawing.Image)(resources.GetObject("rbtBanLe.SmallImage")));
             this.rbtBanLe.Text = "Xuất hóa đơn";
+            this.rbtBanLe.Click += new System.EventHandler(this.rbtBanLe_Click);
             // 
             // rbtDSPX
             // 
