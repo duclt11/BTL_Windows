@@ -60,10 +60,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DoiMatKhau.cs">
+    <Compile Include="Form\DoiMatKhau.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DoiMatKhau.Designer.cs">
+    <Compile Include="Form\DoiMatKhau.Designer.cs">
       <DependentUpon>DoiMatKhau.cs</DependentUpon>
     </Compile>
     <Compile Include="Form\CapNhatChiTietPhieuNhap.cs">
@@ -83,20 +83,12 @@
     <Compile Include="Model\DonHang.cs" />
     <Compile Include="Model\Model1.cs" />
     <Compile Include="Model\NhanVien.cs" />
-    <Compile Include="Model\PhieuNhap.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Model\PhieuNhap.cs" />
     <Compile Include="Form\QuanLySach.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form\QuanLySach.Designer.cs">
       <DependentUpon>QuanLySach.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PhieuNhap.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PhieuNhap.Designer.cs">
-      <DependentUpon>PhieuNhap.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -126,13 +118,25 @@
       <DependentUpon>TrangChu.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\XuongNhap.cs" />
-    <Compile Include="ThongTin.cs">
+    <Compile Include="Form\QuanLiTaiKhoan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ThongTin.Designer.cs">
+    <Compile Include="Form\QuanLiTaiKhoan.Designer.cs">
+      <DependentUpon>QuanLiTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ThongTin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ThongTin.Designer.cs">
       <DependentUpon>ThongTin.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="DoiMatKhau.resx">
+    <Compile Include="Form\ThongTinNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ThongTinNhanVien.Designer.cs">
+      <DependentUpon>ThongTinNhanVien.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form\DoiMatKhau.resx">
       <DependentUpon>DoiMatKhau.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\CapNhatChiTietPhieuNhap.resx">
@@ -143,9 +147,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form\QuanLySach.resx">
       <DependentUpon>QuanLySach.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PhieuNhap.resx">
-      <DependentUpon>PhieuNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -169,9 +170,20 @@
     <EmbeddedResource Include="Form\TrangChu.resx">
       <DependentUpon>TrangChu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ThongTin.resx">
+    <EmbeddedResource Include="Form\QuanLiTaiKhoan.resx">
+      <DependentUpon>QuanLiTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ThongTin.resx">
       <DependentUpon>ThongTin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form\ThongTinNhanVien.resx">
+      <DependentUpon>ThongTinNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -188,7 +200,11 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="Images\user.png" />
+    <Content Include="Sach.sql" />
     <None Include="Resources\backward.ico" />
     <None Include="Resources\3d_bar_chart.ico" />
     <None Include="Resources\notebook_add.ico" />

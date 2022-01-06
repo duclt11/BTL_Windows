@@ -175,6 +175,7 @@ namespace BTL_WinDow
             this.rbtQLTK.Name = "rbtQLTK";
             this.rbtQLTK.SmallImage = ((System.Drawing.Image)(resources.GetObject("rbtQLTK.SmallImage")));
             this.rbtQLTK.Text = "Quản lí tài khoản";
+            this.rbtQLTK.Click += new System.EventHandler(this.rbtQLTK_Click);
             // 
             // rbtNCC
             // 
