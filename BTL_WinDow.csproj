@@ -130,11 +130,6 @@
     <Compile Include="Form\ThongTinNhanVien.Designer.cs">
       <DependentUpon>ThongTinNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="QLCuaHangSachDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>QLCuaHangSachDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="QuanLiHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -229,17 +224,6 @@
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="Images\user.png" />
     <Content Include="Sach.sql" />
-    <None Include="QLCuaHangSachDataSet.xsc">
-      <DependentUpon>QLCuaHangSachDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="QLCuaHangSachDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>QLCuaHangSachDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="QLCuaHangSachDataSet.xss">
-      <DependentUpon>QLCuaHangSachDataSet.xsd</DependentUpon>
-    </None>
     <None Include="Resources\backward.ico" />
     <None Include="Resources\3d_bar_chart.ico" />
     <None Include="Resources\notebook_add.ico" />
