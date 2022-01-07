@@ -40,7 +40,6 @@ namespace BTL_WinDow
             this.lbSL = new System.Windows.Forms.Label();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.btnThemMoi = new System.Windows.Forms.ToolStripButton();
-            this.btnSuaThongTin = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPhieuNhap)).BeginInit();
@@ -128,7 +127,6 @@ namespace BTL_WinDow
             // 
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnThemMoi,
-            this.btnSuaThongTin,
             this.toolStripButton2,
             this.toolStripButton1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
@@ -145,15 +143,6 @@ namespace BTL_WinDow
             this.btnThemMoi.Size = new System.Drawing.Size(57, 22);
             this.btnThemMoi.Text = "Thêm";
             this.btnThemMoi.Click += new System.EventHandler(this.btnThemPhieu_Click);
-            // 
-            // btnSuaThongTin
-            // 
-            this.btnSuaThongTin.Image = ((System.Drawing.Image)(resources.GetObject("btnSuaThongTin.Image")));
-            this.btnSuaThongTin.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnSuaThongTin.Name = "btnSuaThongTin";
-            this.btnSuaThongTin.Size = new System.Drawing.Size(46, 22);
-            this.btnSuaThongTin.Text = "Sửa";
-            this.btnSuaThongTin.Click += new System.EventHandler(this.btnSuaChiTiet_Click);
             // 
             // toolStripButton2
             // 
@@ -212,7 +201,6 @@ namespace BTL_WinDow
         private System.Windows.Forms.DataGridViewTextBoxColumn GhiChu;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton btnThemMoi;
-        private System.Windows.Forms.ToolStripButton btnSuaThongTin;
         private System.Windows.Forms.ToolStripButton toolStripButton2;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
     }

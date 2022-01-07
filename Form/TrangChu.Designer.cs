@@ -251,6 +251,7 @@ namespace BTL_WinDow
             this.rbtDSPX.Name = "rbtDSPX";
             this.rbtDSPX.SmallImage = ((System.Drawing.Image)(resources.GetObject("rbtDSPX.SmallImage")));
             this.rbtDSPX.Text = "Danh sách hóa đơn";
+            this.rbtDSPX.Click += new System.EventHandler(this.rbtDSPX_Click);
             // 
             // tabControl1
             // 

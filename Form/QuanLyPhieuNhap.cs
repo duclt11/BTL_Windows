@@ -173,9 +173,7 @@ namespace BTL_WinDow
                 MessageBox.Show(this, "Vui lòng chọn phiếu nhập hợp lệ!", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            this.Hide();
-            new CapNhatChiTietPhieuNhap(int.Parse(rows[0].Cells[0].Value.ToString())).ShowDialog();
-            this.Close();
+           
         }
     }
 }

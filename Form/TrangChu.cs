@@ -139,5 +139,10 @@ namespace BTL_WinDow
         {
             CreateNewTabControl("Danh sách phiếu nhập", new QuanLyPhieuNhap());
         }
+
+        private void rbtDSPX_Click(object sender, EventArgs e)
+        {
+            CreateNewTabControl("Danh sách hóa đơn", new QuanLiHoaDon());
+        }
     }
 }

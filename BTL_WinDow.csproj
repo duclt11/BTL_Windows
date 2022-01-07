@@ -66,12 +66,6 @@
     <Compile Include="Form\DoiMatKhau.Designer.cs">
       <DependentUpon>DoiMatKhau.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form\CapNhatChiTietPhieuNhap.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form\CapNhatChiTietPhieuNhap.Designer.cs">
-      <DependentUpon>CapNhatChiTietPhieuNhap.cs</DependentUpon>
-    </Compile>
     <Compile Include="Model\ChiTietDonHang.cs" />
     <Compile Include="Model\ChiTietPhieuNhap.cs" />
     <Compile Include="Form\DangNhap.cs">
@@ -141,11 +135,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLCuaHangSachDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="QLCuaHangSachDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>QLCuaHangSachDataSet1.xsd</DependentUpon>
-    </Compile>
     <Compile Include="QuanLiHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,17 +147,14 @@
     <Compile Include="ThemHoaDon.Designer.cs">
       <DependentUpon>ThemHoaDon.cs</DependentUpon>
     </Compile>
-    <Compile Include="ThemPhieuNhap.cs">
+    <Compile Include="Form\ThemPhieuNhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ThemPhieuNhap.Designer.cs">
+    <Compile Include="Form\ThemPhieuNhap.Designer.cs">
       <DependentUpon>ThemPhieuNhap.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form\DoiMatKhau.resx">
       <DependentUpon>DoiMatKhau.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form\CapNhatChiTietPhieuNhap.resx">
-      <DependentUpon>CapNhatChiTietPhieuNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
@@ -218,7 +204,7 @@
     <EmbeddedResource Include="ThemHoaDon.resx">
       <DependentUpon>ThemHoaDon.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ThemPhieuNhap.resx">
+    <EmbeddedResource Include="Form\ThemPhieuNhap.resx">
       <DependentUpon>ThemPhieuNhap.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
@@ -253,17 +239,6 @@
     </None>
     <None Include="QLCuaHangSachDataSet.xss">
       <DependentUpon>QLCuaHangSachDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="QLCuaHangSachDataSet1.xsc">
-      <DependentUpon>QLCuaHangSachDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="QLCuaHangSachDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>QLCuaHangSachDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="QLCuaHangSachDataSet1.xss">
-      <DependentUpon>QLCuaHangSachDataSet1.xsd</DependentUpon>
     </None>
     <None Include="Resources\backward.ico" />
     <None Include="Resources\3d_bar_chart.ico" />
