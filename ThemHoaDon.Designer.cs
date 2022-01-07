@@ -29,7 +29,6 @@ namespace BTL_WinDow
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThemHoaDon));
             this.button1 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
@@ -61,15 +60,7 @@ namespace BTL_WinDow
             this.txtKhachHang = new System.Windows.Forms.TextBox();
             this.txtSDT = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.qLCuaHangSachDataSet = new BTL_WinDow.QLCuaHangSachDataSet();
-            this.sachBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.sachTableAdapter = new BTL_WinDow.QLCuaHangSachDataSetTableAdapters.SachTableAdapter();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.btnThemMoi = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPhieuNhap)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qLCuaHangSachDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sachBindingSource)).BeginInit();
-            this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -360,46 +351,12 @@ namespace BTL_WinDow
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 84;
             // 
-            // qLCuaHangSachDataSet
-            // 
-            this.qLCuaHangSachDataSet.DataSetName = "QLCuaHangSachDataSet";
-            this.qLCuaHangSachDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // sachBindingSource
-            // 
-            this.sachBindingSource.DataMember = "Sach";
-            this.sachBindingSource.DataSource = this.qLCuaHangSachDataSet;
-            // 
-            // sachTableAdapter
-            // 
-            this.sachTableAdapter.ClearBeforeFill = true;
-            // 
-            // toolStrip1
-            // 
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnThemMoi});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(822, 25);
-            this.toolStrip1.TabIndex = 86;
-            this.toolStrip1.Text = "toolStrip1";
-            // 
-            // btnThemMoi
-            // 
-            this.btnThemMoi.Image = ((System.Drawing.Image)(resources.GetObject("btnThemMoi.Image")));
-            this.btnThemMoi.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnThemMoi.Name = "btnThemMoi";
-            this.btnThemMoi.Size = new System.Drawing.Size(74, 22);
-            this.btnThemMoi.Text = "Làm mới";
-            this.btnThemMoi.Click += new System.EventHandler(this.btnThemMoi_Click);
-            // 
             // ThemHoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(822, 465);
             this.ControlBox = false;
-            this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.txtSDT);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.txtDiaChi);
@@ -431,10 +388,6 @@ namespace BTL_WinDow
             this.Text = "Thêm hóa đơn mới";
             this.Load += new System.EventHandler(this.ThemHoaDon_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPhieuNhap)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qLCuaHangSachDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sachBindingSource)).EndInit();
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -472,10 +425,5 @@ namespace BTL_WinDow
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn SoLuong;
         private System.Windows.Forms.DataGridViewTextBoxColumn DonGia;
-        private QLCuaHangSachDataSet qLCuaHangSachDataSet;
-        private System.Windows.Forms.BindingSource sachBindingSource;
-        private QLCuaHangSachDataSetTableAdapters.SachTableAdapter sachTableAdapter;
-        private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripButton btnThemMoi;
     }
 }
