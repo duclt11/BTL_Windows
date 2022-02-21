@@ -59,7 +59,7 @@ namespace BTL_WinDow
             db.Entry(res).State = System.Data.Entity.EntityState.Modified;
             db.SaveChanges();
             MessageBox.Show("Cập nhật thông tin thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            
+            Close();
         }
     }
 }

@@ -13,15 +13,23 @@ namespace BTL_WinDow
     public partial class SachForm : Form
     {
         Model1 db = new Model1();
-        public SachForm()
+        int choice;
+        public SachForm(int c)
         {
             InitializeComponent();
+            choice = c;
+            if (c == 0)
+            {
+                btnThoat.Visible = false;
+            }
+            else
+            {
+                btnThoat.Visible = true;
+            }
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            new TrangChu().ShowDialog();
             this.Close();
         }
         private void LoadData(List<Sach> sachs)
@@ -116,7 +124,7 @@ namespace BTL_WinDow
             foreach (DataGridViewColumn col in dgvSach.Columns)
             {
                 col.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
-                col.HeaderCell.Style.Font = new Font("Microsoft San Serif", 8, FontStyle.Bold);
+                col.HeaderCell.Style.Font = new Font("Microsoft San Serif", 10, FontStyle.Bold);
             }
         }
 
@@ -211,8 +219,17 @@ namespace BTL_WinDow
                     }
                     if (MessageBox.Show(this, "Bạn có chắc muốn xóa?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                         {
+                        try
+                        {
                             db.Saches.RemoveRange(sachs);
                             db.SaveChanges();
+                        }
+                        catch
+                        {
+                            MessageBox.Show("Không thể xóa sách này vì sách đăng được lưu trong hóa đơn hoặc phiếu nhập!", "Thông báo", MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                            return;
+                        }
+                            
                             MessageBox.Show(this, "Xóa sách khỏi cơ sở dữ liệu thành công.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             var sachs1 = db.Saches.ToList();
                             LoadData(sachs1);
@@ -221,7 +238,7 @@ namespace BTL_WinDow
                     }
                 else
                 {
-                    MessageBox.Show("Vui lòng chọn dòng muốn xóa!", "Thông báo",MessageBoxButtons.OK);
+                    MessageBox.Show("Vui lòng chọn dòng muốn xóa!", "Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Warning);
                     return;
                 }
             }

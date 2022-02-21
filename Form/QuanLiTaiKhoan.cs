@@ -79,18 +79,22 @@ namespace BTL_WinDow
         {
             
         }
-        private void Show()
-        {
-            var ds = db.NhanViens.Select(p => new {p.MaNV, p.HoTen, p.Tuoi, p.DiaChi, p.TenDangNhap }).ToList();
-            dgvNhanVien.DataSource = ds;
-
-            lbSl.Text = dgvNhanVien.Rows.Count.ToString();
-        }
-
         private void txtTimKiem_TextChanged(object sender, EventArgs e)
         {
             var res = db.NhanViens.Where(e1 => e1.HoTen.Contains(txtTimKiem.Text) || e1.TenDangNhap.Contains(txtTimKiem.Text)).Select(e1=>new{ e1.MaNV, e1.HoTen, e1.TenDangNhap, e1.Tuoi, e1.DiaChi}).ToList();
             dgvNhanVien.DataSource = res;
+        }
+        private void Show()
+        {
+            var ds = db.NhanViens.Select(p => new { p.MaNV, p.HoTen, p.Tuoi, p.DiaChi, p.TenDangNhap }).ToList();
+            dgvNhanVien.DataSource = ds;
+            foreach (DataGridViewColumn col in dgvNhanVien.Columns)
+            {
+                col.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                col.HeaderCell.Style.Font = new Font("Microsoft San Serif", 10, FontStyle.Bold);
+            }
+
+            lbSl.Text = dgvNhanVien.Rows.Count.ToString();
         }
     }
 }

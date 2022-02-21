@@ -45,59 +45,72 @@ namespace BTL_WinDow
             // 
             this.txtCu.BackColor = System.Drawing.Color.White;
             this.txtCu.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.txtCu.Location = new System.Drawing.Point(124, 25);
+            this.txtCu.Location = new System.Drawing.Point(190, 31);
+            this.txtCu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCu.Name = "txtCu";
-            this.txtCu.Size = new System.Drawing.Size(176, 20);
+            this.txtCu.Size = new System.Drawing.Size(233, 22);
             this.txtCu.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(22, 28);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Blue;
+            this.label1.Location = new System.Drawing.Point(13, 31);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 13);
+            this.label1.Size = new System.Drawing.Size(105, 20);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Mật khẩu cũ";
+            this.label1.Text = "Mật khẩu cũ:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(22, 61);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Blue;
+            this.label2.Location = new System.Drawing.Point(13, 72);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 13);
+            this.label2.Size = new System.Drawing.Size(114, 20);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Mật khẩu mới";
+            this.label2.Text = "Mật khẩu mới:";
             // 
             // txtMoi
             // 
-            this.txtMoi.Location = new System.Drawing.Point(124, 58);
+            this.txtMoi.Location = new System.Drawing.Point(190, 71);
+            this.txtMoi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtMoi.Name = "txtMoi";
-            this.txtMoi.Size = new System.Drawing.Size(176, 20);
+            this.txtMoi.Size = new System.Drawing.Size(233, 22);
             this.txtMoi.TabIndex = 2;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(22, 94);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Blue;
+            this.label3.Location = new System.Drawing.Point(13, 113);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(93, 13);
+            this.label3.Size = new System.Drawing.Size(148, 20);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Nhập lại mật khẩu";
+            this.label3.Text = "Nhập lại mật khẩu:";
             // 
             // txtXacNhan
             // 
-            this.txtXacNhan.Location = new System.Drawing.Point(124, 91);
+            this.txtXacNhan.Location = new System.Drawing.Point(190, 112);
+            this.txtXacNhan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtXacNhan.Name = "txtXacNhan";
-            this.txtXacNhan.Size = new System.Drawing.Size(176, 20);
+            this.txtXacNhan.Size = new System.Drawing.Size(233, 22);
             this.txtXacNhan.TabIndex = 4;
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.LightSkyBlue;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(64, 117);
+            this.button1.Location = new System.Drawing.Point(85, 144);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(93, 38);
+            this.button1.Size = new System.Drawing.Size(124, 47);
             this.button1.TabIndex = 6;
             this.button1.Text = "Đổi";
             this.button1.UseVisualStyleBackColor = false;
@@ -107,9 +120,10 @@ namespace BTL_WinDow
             // 
             this.button2.BackColor = System.Drawing.Color.LightSkyBlue;
             this.button2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(195, 117);
+            this.button2.Location = new System.Drawing.Point(260, 144);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(93, 38);
+            this.button2.Size = new System.Drawing.Size(124, 47);
             this.button2.TabIndex = 7;
             this.button2.Text = "Xóa";
             this.button2.UseVisualStyleBackColor = false;
@@ -117,10 +131,10 @@ namespace BTL_WinDow
             // 
             // DoiMatKhau
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(339, 167);
+            this.ClientSize = new System.Drawing.Size(452, 206);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
@@ -130,6 +144,7 @@ namespace BTL_WinDow
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtCu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "DoiMatKhau";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Đổi mật khẩu";

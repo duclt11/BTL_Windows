@@ -1,12 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Controls;
 using System.Windows.Forms;
 
 namespace BTL_WinDow
@@ -91,7 +87,7 @@ namespace BTL_WinDow
             foreach (DataGridViewColumn col in dgvPhieuNhap.Columns)
             {
                 col.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
-                col.HeaderCell.Style.Font = new Font("Microsoft San Serif", 8, FontStyle.Bold);
+                col.HeaderCell.Style.Font = new Font("Microsoft San Serif", 10, FontStyle.Bold);
             }
             LoadData(phieuNhap);
         }
@@ -140,7 +136,7 @@ namespace BTL_WinDow
                 //int id = db.PhieuNhaps.Max(p => p.SoPN);
                 
                 //new CapNhatChiTietPhieuNhap(id).ShowDialog();
-                new ThemPhieuNhap().Show();
+                new ThemPhieuNhap(-1).Show();
 
             }
             catch (Exception ex)
@@ -173,6 +169,7 @@ namespace BTL_WinDow
                 MessageBox.Show(this, "Vui lòng chọn phiếu nhập hợp lệ!", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+            new ThemPhieuNhap(Convert.ToInt32(rows[0].Cells[0].Value)).ShowDialog();
            
         }
     }
