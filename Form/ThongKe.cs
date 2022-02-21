@@ -31,8 +31,6 @@ namespace BTL_WinDow
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            new TrangChu().ShowDialog();
             this.Close();
         }
 
@@ -55,17 +53,17 @@ namespace BTL_WinDow
         {
             if (rbtnNhap.Checked)
             {
-                chartTK.Series["SLHoaDon"].Points.Clear();
-                chartTK.Series["SLSanPham"].Points.Clear();
+                chartTK.Series[0].Points.Clear();
+                chartTK.Series[1].Points.Clear();
                 var nhap = db.PhieuNhaps.AsQueryable();
                 int month = Convert.ToInt32(DTThongKe.Value.Month);
                 int year = Convert.ToInt32(DTThongKe.Value.Year);
                 int ngay = DateTime.DaysInMonth(year, month);
                 List<int> ngays=new List<int>();
-                for(int i=1; i <= ngay; i++)
+                    for (int i=1; i <= ngay; i++)
                 {
                     var slhd = db.PhieuNhaps.Count(p => p.NgayNhap.Value.Day == i && p.NgayNhap.Value.Month == month && p.NgayNhap.Value.Year == year);
-                    chartTK.Series["SLHoaDon"].Points.AddXY(i, slhd);
+                        chartTK.Series[1].Points.AddXY(i, slhd);
                     int? slsp = 0;
                     var phieunhaps = db.PhieuNhaps.Where(p => p.NgayNhap.Value.Day == i && p.NgayNhap.Value.Month == month && p.NgayNhap.Value.Year == year).ToList();
                     foreach(var p in phieunhaps)
@@ -75,7 +73,8 @@ namespace BTL_WinDow
                             slsp = slsp + ct.SoLuong;
                         }
                     }
-                    chartTK.Series["SLSanPham"].Points.AddXY(i, slsp);
+                        chartTK.Series[0].Points.AddXY(i, slsp);
+                    
                 }
                 var hd= db.PhieuNhaps.Count(p=>p.NgayNhap.Value.Month == month && p.NgayNhap.Value.Year == year);
                 label1.Text =hd+"";
@@ -101,8 +100,8 @@ namespace BTL_WinDow
         {
             if (rbtnXuat.Checked)
             {
-                chartTK.Series["SLHoaDon"].Points.Clear();
-                chartTK.Series["SLSanPham"].Points.Clear();
+                chartTK.Series[1].Points.Clear();
+                chartTK.Series[0].Points.Clear();
                 var nhap = db.PhieuNhaps.AsQueryable();
                 int month = Convert.ToInt32(DTThongKe.Value.Month);
                 int year = Convert.ToInt32(DTThongKe.Value.Year);
@@ -111,7 +110,7 @@ namespace BTL_WinDow
                 for (int i = 1; i <= ngay; i++)
                 {
                     var slhd = db.DonHangs.Count(d => d.NgayLapDon.Day == i && d.NgayLapDon.Month == month && d.NgayLapDon.Year == year);
-                    chartTK.Series["SLHoaDon"].Points.AddXY(i, slhd);
+                    chartTK.Series[1].Points.AddXY(i, slhd);
                     int? slsp = 0;
                     var donhangs = db.DonHangs.Where(d => d.NgayLapDon.Day == i && d.NgayLapDon.Month == month && d.NgayLapDon.Year == year).ToList();
                     foreach (var d in donhangs)
@@ -121,7 +120,7 @@ namespace BTL_WinDow
                             slsp = slsp + ct.SoLuong;
                         }
                     }
-                    chartTK.Series["SLSanPham"].Points.AddXY(i, slsp);
+                    chartTK.Series[0].Points.AddXY(i, slsp);
                 }
                 var hd = db.DonHangs.Count(p => p.NgayLapDon.Month == month && p.NgayLapDon.Year == year);
                 label1.Text =hd+"";

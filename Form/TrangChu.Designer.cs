@@ -31,27 +31,27 @@ namespace BTL_WinDow
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TrangChu));
             this.ribbon1 = new System.Windows.Forms.Ribbon();
-            this.ribbonOrbMenuItem1 = new System.Windows.Forms.RibbonOrbMenuItem();
-            this.ribbonOrbMenuItem2 = new System.Windows.Forms.RibbonOrbMenuItem();
             this.ribbonTab1 = new System.Windows.Forms.RibbonTab();
             this.ribbonPanel1 = new System.Windows.Forms.RibbonPanel();
+            this.ribbonTab2 = new System.Windows.Forms.RibbonTab();
+            this.ribbonPanel2 = new System.Windows.Forms.RibbonPanel();
+            this.ribbonTab3 = new System.Windows.Forms.RibbonTab();
+            this.ribbonPanel3 = new System.Windows.Forms.RibbonPanel();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ribbonOrbMenuItem1 = new System.Windows.Forms.RibbonOrbMenuItem();
+            this.ribbonOrbMenuItem2 = new System.Windows.Forms.RibbonOrbMenuItem();
             this.rbtDoiMatKhau = new System.Windows.Forms.RibbonButton();
             this.rbtDangXuat = new System.Windows.Forms.RibbonButton();
             this.rbtThongTin = new System.Windows.Forms.RibbonButton();
-            this.ribbonTab2 = new System.Windows.Forms.RibbonTab();
-            this.ribbonPanel2 = new System.Windows.Forms.RibbonPanel();
             this.rbtQLSach = new System.Windows.Forms.RibbonButton();
             this.rbtQLTK = new System.Windows.Forms.RibbonButton();
             this.rbtNCC = new System.Windows.Forms.RibbonButton();
-            this.ribbonTab3 = new System.Windows.Forms.RibbonTab();
-            this.ribbonPanel3 = new System.Windows.Forms.RibbonPanel();
             this.rbtThongKe = new System.Windows.Forms.RibbonButton();
             this.rbtNhapKho = new System.Windows.Forms.RibbonButton();
             this.rbtDSPN = new System.Windows.Forms.RibbonButton();
             this.rbtBanLe = new System.Windows.Forms.RibbonButton();
             this.rbtDSPX = new System.Windows.Forms.RibbonButton();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,6 +79,79 @@ namespace BTL_WinDow
             this.ribbon1.Tabs.Add(this.ribbonTab3);
             this.ribbon1.Text = "ribbon1";
             // 
+            // ribbonTab1
+            // 
+            this.ribbonTab1.Name = "ribbonTab1";
+            this.ribbonTab1.Panels.Add(this.ribbonPanel1);
+            this.ribbonTab1.Text = "Hệ thống";
+            // 
+            // ribbonPanel1
+            // 
+            this.ribbonPanel1.Items.Add(this.rbtDoiMatKhau);
+            this.ribbonPanel1.Items.Add(this.rbtDangXuat);
+            this.ribbonPanel1.Items.Add(this.rbtThongTin);
+            this.ribbonPanel1.Name = "ribbonPanel1";
+            this.ribbonPanel1.Text = "Hệ thống";
+            // 
+            // ribbonTab2
+            // 
+            this.ribbonTab2.Name = "ribbonTab2";
+            this.ribbonTab2.Panels.Add(this.ribbonPanel2);
+            this.ribbonTab2.Text = "Danh mục";
+            // 
+            // ribbonPanel2
+            // 
+            this.ribbonPanel2.Items.Add(this.rbtQLSach);
+            this.ribbonPanel2.Items.Add(this.rbtQLTK);
+            this.ribbonPanel2.Items.Add(this.rbtNCC);
+            this.ribbonPanel2.Name = "ribbonPanel2";
+            this.ribbonPanel2.Text = "Quản lí";
+            // 
+            // ribbonTab3
+            // 
+            this.ribbonTab3.Name = "ribbonTab3";
+            this.ribbonTab3.Panels.Add(this.ribbonPanel3);
+            this.ribbonTab3.Text = "Chức năng";
+            // 
+            // ribbonPanel3
+            // 
+            this.ribbonPanel3.Items.Add(this.rbtThongKe);
+            this.ribbonPanel3.Items.Add(this.rbtNhapKho);
+            this.ribbonPanel3.Items.Add(this.rbtDSPN);
+            this.ribbonPanel3.Items.Add(this.rbtBanLe);
+            this.ribbonPanel3.Items.Add(this.rbtDSPX);
+            this.ribbonPanel3.Name = "ribbonPanel3";
+            this.ribbonPanel3.Text = "Nhập xuất";
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabControl1.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
+            this.tabControl1.Location = new System.Drawing.Point(0, 141);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(1134, 435);
+            this.tabControl1.TabIndex = 11;
+            this.tabControl1.Visible = false;
+            this.tabControl1.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.tabControl1_DrawItem);
+            this.tabControl1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.tabControl1_MouseClick);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(124, 141);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(861, 660);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
+            // 
             // ribbonOrbMenuItem1
             // 
             this.ribbonOrbMenuItem1.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left;
@@ -96,20 +169,6 @@ namespace BTL_WinDow
             this.ribbonOrbMenuItem2.Name = "ribbonOrbMenuItem2";
             this.ribbonOrbMenuItem2.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonOrbMenuItem2.SmallImage")));
             this.ribbonOrbMenuItem2.Text = "ribbonOrbMenuItem2";
-            // 
-            // ribbonTab1
-            // 
-            this.ribbonTab1.Name = "ribbonTab1";
-            this.ribbonTab1.Panels.Add(this.ribbonPanel1);
-            this.ribbonTab1.Text = "Hệ thống";
-            // 
-            // ribbonPanel1
-            // 
-            this.ribbonPanel1.Items.Add(this.rbtDoiMatKhau);
-            this.ribbonPanel1.Items.Add(this.rbtDangXuat);
-            this.ribbonPanel1.Items.Add(this.rbtThongTin);
-            this.ribbonPanel1.Name = "ribbonPanel1";
-            this.ribbonPanel1.Text = "Hệ thống";
             // 
             // rbtDoiMatKhau
             // 
@@ -143,20 +202,6 @@ namespace BTL_WinDow
             this.rbtThongTin.Text = "Thông tin tài khoản";
             this.rbtThongTin.Click += new System.EventHandler(this.rbtThongTin_Click);
             // 
-            // ribbonTab2
-            // 
-            this.ribbonTab2.Name = "ribbonTab2";
-            this.ribbonTab2.Panels.Add(this.ribbonPanel2);
-            this.ribbonTab2.Text = "Danh mục";
-            // 
-            // ribbonPanel2
-            // 
-            this.ribbonPanel2.Items.Add(this.rbtQLSach);
-            this.ribbonPanel2.Items.Add(this.rbtQLTK);
-            this.ribbonPanel2.Items.Add(this.rbtNCC);
-            this.ribbonPanel2.Name = "ribbonPanel2";
-            this.ribbonPanel2.Text = "Quản lí";
-            // 
             // rbtQLSach
             // 
             this.rbtQLSach.Image = ((System.Drawing.Image)(resources.GetObject("rbtQLSach.Image")));
@@ -186,22 +231,6 @@ namespace BTL_WinDow
             this.rbtNCC.SmallImage = ((System.Drawing.Image)(resources.GetObject("rbtNCC.SmallImage")));
             this.rbtNCC.Text = "Danh sách nhà cung cấp";
             this.rbtNCC.Click += new System.EventHandler(this.rbtNCC_Click);
-            // 
-            // ribbonTab3
-            // 
-            this.ribbonTab3.Name = "ribbonTab3";
-            this.ribbonTab3.Panels.Add(this.ribbonPanel3);
-            this.ribbonTab3.Text = "Chức năng";
-            // 
-            // ribbonPanel3
-            // 
-            this.ribbonPanel3.Items.Add(this.rbtThongKe);
-            this.ribbonPanel3.Items.Add(this.rbtNhapKho);
-            this.ribbonPanel3.Items.Add(this.rbtDSPN);
-            this.ribbonPanel3.Items.Add(this.rbtBanLe);
-            this.ribbonPanel3.Items.Add(this.rbtDSPX);
-            this.ribbonPanel3.Name = "ribbonPanel3";
-            this.ribbonPanel3.Text = "Nhập xuất";
             // 
             // rbtThongKe
             // 
@@ -252,34 +281,6 @@ namespace BTL_WinDow
             this.rbtDSPX.SmallImage = ((System.Drawing.Image)(resources.GetObject("rbtDSPX.SmallImage")));
             this.rbtDSPX.Text = "Danh sách hóa đơn";
             this.rbtDSPX.Click += new System.EventHandler(this.rbtDSPX_Click);
-            // 
-            // tabControl1
-            // 
-            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabControl1.Location = new System.Drawing.Point(0, 141);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1134, 435);
-            this.tabControl1.TabIndex = 11;
-            this.tabControl1.Visible = false;
-            this.tabControl1.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.tabControl1_DrawItem);
-            this.tabControl1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.tabControl1_MouseDown);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(124, 141);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(861, 660);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
             // 
             // TrangChu
             // 

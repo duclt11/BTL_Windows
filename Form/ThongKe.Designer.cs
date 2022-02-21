@@ -43,7 +43,6 @@ namespace BTL_WinDow
             this.rbtnXuat = new System.Windows.Forms.RadioButton();
             this.lbSLSanPham = new System.Windows.Forms.Label();
             this.lbGTGiaoDich = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -59,32 +58,32 @@ namespace BTL_WinDow
             this.chartTK.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chartTK.Legends.Add(legend1);
-            this.chartTK.Location = new System.Drawing.Point(172, 51);
-            this.chartTK.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chartTK.Location = new System.Drawing.Point(229, 63);
+            this.chartTK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartTK.Name = "chartTK";
             series1.ChartArea = "ChartArea1";
             series1.IsValueShownAsLabel = true;
             series1.Legend = "Legend1";
-            series1.Name = "SLSanPham";
+            series1.Name = "Số lượng sản phẩm";
             series2.ChartArea = "ChartArea1";
             series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
             series2.IsValueShownAsLabel = true;
             series2.Legend = "Legend1";
             series2.MarkerBorderColor = System.Drawing.Color.Red;
-            series2.Name = "SLHoaDon";
+            series2.Name = "Số lượng hóa đơn";
             this.chartTK.Series.Add(series1);
             this.chartTK.Series.Add(series2);
-            this.chartTK.Size = new System.Drawing.Size(845, 349);
+            this.chartTK.Size = new System.Drawing.Size(1127, 430);
             this.chartTK.TabIndex = 0;
             this.chartTK.Text = "Thống kê";
             // 
             // DTThongKe
             // 
             this.DTThongKe.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.DTThongKe.Location = new System.Drawing.Point(86, 51);
-            this.DTThongKe.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DTThongKe.Location = new System.Drawing.Point(115, 63);
+            this.DTThongKe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DTThongKe.Name = "DTThongKe";
-            this.DTThongKe.Size = new System.Drawing.Size(83, 20);
+            this.DTThongKe.Size = new System.Drawing.Size(109, 22);
             this.DTThongKe.TabIndex = 3;
             this.DTThongKe.ValueChanged += new System.EventHandler(this.DTThongKe_ValueChanged);
             // 
@@ -93,10 +92,9 @@ namespace BTL_WinDow
             this.lbSLDonHang.AutoSize = true;
             this.lbSLDonHang.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSLDonHang.ForeColor = System.Drawing.Color.Blue;
-            this.lbSLDonHang.Location = new System.Drawing.Point(12, 142);
-            this.lbSLDonHang.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbSLDonHang.Location = new System.Drawing.Point(16, 175);
             this.lbSLDonHang.Name = "lbSLDonHang";
-            this.lbSLDonHang.Size = new System.Drawing.Size(138, 40);
+            this.lbSLDonHang.Size = new System.Drawing.Size(175, 50);
             this.lbSLDonHang.TabIndex = 4;
             this.lbSLDonHang.Text = "Tổng số lượng hóa \r\nđơn trong tháng:";
             // 
@@ -107,10 +105,9 @@ namespace BTL_WinDow
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Blue;
-            this.label2.Location = new System.Drawing.Point(516, 408);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(688, 502);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 17);
+            this.label2.Size = new System.Drawing.Size(116, 20);
             this.label2.TabIndex = 5;
             this.label2.Text = "Bảng thống kê";
             // 
@@ -119,10 +116,9 @@ namespace BTL_WinDow
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Blue;
-            this.label3.Location = new System.Drawing.Point(12, 51);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(16, 63);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(74, 20);
+            this.label3.Size = new System.Drawing.Size(95, 25);
             this.label3.TabIndex = 6;
             this.label3.Text = "Thời gian:";
             // 
@@ -132,10 +128,10 @@ namespace BTL_WinDow
             this.rbtnNhap.Checked = true;
             this.rbtnNhap.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtnNhap.ForeColor = System.Drawing.Color.Blue;
-            this.rbtnNhap.Location = new System.Drawing.Point(12, 84);
-            this.rbtnNhap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbtnNhap.Location = new System.Drawing.Point(16, 103);
+            this.rbtnNhap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rbtnNhap.Name = "rbtnNhap";
-            this.rbtnNhap.Size = new System.Drawing.Size(100, 24);
+            this.rbtnNhap.Size = new System.Drawing.Size(127, 29);
             this.rbtnNhap.TabIndex = 8;
             this.rbtnNhap.TabStop = true;
             this.rbtnNhap.Text = "Nhập hàng";
@@ -146,10 +142,10 @@ namespace BTL_WinDow
             // 
             this.rbtnXuat.AutoSize = true;
             this.rbtnXuat.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtnXuat.Location = new System.Drawing.Point(12, 108);
-            this.rbtnXuat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbtnXuat.Location = new System.Drawing.Point(16, 133);
+            this.rbtnXuat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rbtnXuat.Name = "rbtnXuat";
-            this.rbtnXuat.Size = new System.Drawing.Size(89, 24);
+            this.rbtnXuat.Size = new System.Drawing.Size(113, 29);
             this.rbtnXuat.TabIndex = 9;
             this.rbtnXuat.Text = "Bán hàng";
             this.rbtnXuat.UseVisualStyleBackColor = true;
@@ -160,10 +156,9 @@ namespace BTL_WinDow
             this.lbSLSanPham.AutoSize = true;
             this.lbSLSanPham.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSLSanPham.ForeColor = System.Drawing.Color.Blue;
-            this.lbSLSanPham.Location = new System.Drawing.Point(12, 197);
-            this.lbSLSanPham.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbSLSanPham.Location = new System.Drawing.Point(16, 242);
             this.lbSLSanPham.Name = "lbSLSanPham";
-            this.lbSLSanPham.Size = new System.Drawing.Size(127, 60);
+            this.lbSLSanPham.Size = new System.Drawing.Size(162, 75);
             this.lbSLSanPham.TabIndex = 10;
             this.lbSLSanPham.Text = "Tổng số lượng\r\nsản phẩm đã bán \r\ntrong tháng:";
             // 
@@ -172,37 +167,19 @@ namespace BTL_WinDow
             this.lbGTGiaoDich.AutoSize = true;
             this.lbGTGiaoDich.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbGTGiaoDich.ForeColor = System.Drawing.Color.Blue;
-            this.lbGTGiaoDich.Location = new System.Drawing.Point(12, 273);
-            this.lbGTGiaoDich.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbGTGiaoDich.Location = new System.Drawing.Point(16, 336);
             this.lbGTGiaoDich.Name = "lbGTGiaoDich";
-            this.lbGTGiaoDich.Size = new System.Drawing.Size(115, 60);
+            this.lbGTGiaoDich.Size = new System.Drawing.Size(146, 75);
             this.lbGTGiaoDich.TabIndex = 13;
             this.lbGTGiaoDich.Text = "Tổng giá trị \r\ngiao dịch trong \r\ntháng:";
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Blue;
-            this.button1.Image = global::BTL_WinDow.Properties.Resources.backward;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(15, 339);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(140, 62);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Thoát";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(134, 165);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(179, 203);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(16, 17);
+            this.label1.Size = new System.Drawing.Size(18, 20);
             this.label1.TabIndex = 16;
             this.label1.Text = "0";
             // 
@@ -210,10 +187,9 @@ namespace BTL_WinDow
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(111, 240);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(148, 295);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(16, 17);
+            this.label5.Size = new System.Drawing.Size(18, 20);
             this.label5.TabIndex = 17;
             this.label5.Text = "0";
             // 
@@ -221,23 +197,21 @@ namespace BTL_WinDow
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(70, 316);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(93, 389);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(16, 17);
+            this.label6.Size = new System.Drawing.Size(18, 20);
             this.label6.TabIndex = 18;
             this.label6.Text = "0";
             // 
             // ThongKe
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1026, 434);
+            this.ClientSize = new System.Drawing.Size(1368, 534);
             this.ControlBox = false;
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.lbGTGiaoDich);
             this.Controls.Add(this.lbSLSanPham);
             this.Controls.Add(this.rbtnXuat);
@@ -248,7 +222,7 @@ namespace BTL_WinDow
             this.Controls.Add(this.DTThongKe);
             this.Controls.Add(this.chartTK);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ThongKe";
@@ -273,7 +247,6 @@ namespace BTL_WinDow
         private System.Windows.Forms.RadioButton rbtnXuat;
         private System.Windows.Forms.Label lbSLSanPham;
         private System.Windows.Forms.Label lbGTGiaoDich;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;

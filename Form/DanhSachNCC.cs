@@ -25,7 +25,7 @@ namespace BTL_WinDow
             foreach (DataGridViewColumn col in dgvNCC.Columns)
             {
                 col.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
-                col.HeaderCell.Style.Font = new Font("Microsoft San Serif", 8, FontStyle.Bold);
+                col.HeaderCell.Style.Font = new Font("Microsoft San Serif", 10, FontStyle.Bold);
             }
         }
         private void Clear()

@@ -49,7 +49,6 @@ namespace BTL_WinDow
             this.btnSuaThongTin = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
-            this.btnThoat = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNCC)).BeginInit();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -58,11 +57,10 @@ namespace BTL_WinDow
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(40, 61);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.ForeColor = System.Drawing.Color.Blue;
+            this.label3.Location = new System.Drawing.Point(53, 75);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(127, 20);
+            this.label3.Size = new System.Drawing.Size(164, 25);
             this.label3.TabIndex = 2;
             this.label3.Text = "Tên nhà cung cấp:";
             // 
@@ -70,11 +68,10 @@ namespace BTL_WinDow
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(40, 95);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.ForeColor = System.Drawing.Color.Blue;
+            this.label4.Location = new System.Drawing.Point(53, 117);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 20);
+            this.label4.Size = new System.Drawing.Size(74, 25);
             this.label4.TabIndex = 3;
             this.label4.Text = "Địa chỉ:";
             // 
@@ -82,36 +79,35 @@ namespace BTL_WinDow
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(40, 129);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.ForeColor = System.Drawing.Color.Blue;
+            this.label5.Location = new System.Drawing.Point(53, 159);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(100, 20);
+            this.label5.Size = new System.Drawing.Size(127, 25);
             this.label5.TabIndex = 4;
             this.label5.Text = "Số điện thoại:";
             // 
             // txtTenNCC
             // 
-            this.txtTenNCC.Location = new System.Drawing.Point(171, 61);
-            this.txtTenNCC.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTenNCC.Location = new System.Drawing.Point(228, 75);
+            this.txtTenNCC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTenNCC.Name = "txtTenNCC";
-            this.txtTenNCC.Size = new System.Drawing.Size(210, 20);
+            this.txtTenNCC.Size = new System.Drawing.Size(279, 22);
             this.txtTenNCC.TabIndex = 6;
             // 
             // txtDiaChi
             // 
-            this.txtDiaChi.Location = new System.Drawing.Point(171, 95);
-            this.txtDiaChi.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDiaChi.Location = new System.Drawing.Point(228, 117);
+            this.txtDiaChi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDiaChi.Name = "txtDiaChi";
-            this.txtDiaChi.Size = new System.Drawing.Size(210, 20);
+            this.txtDiaChi.Size = new System.Drawing.Size(279, 22);
             this.txtDiaChi.TabIndex = 7;
             // 
             // txtSDT
             // 
-            this.txtSDT.Location = new System.Drawing.Point(171, 129);
-            this.txtSDT.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSDT.Location = new System.Drawing.Point(228, 159);
+            this.txtSDT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSDT.Name = "txtSDT";
-            this.txtSDT.Size = new System.Drawing.Size(210, 20);
+            this.txtSDT.Size = new System.Drawing.Size(279, 22);
             this.txtSDT.TabIndex = 8;
             // 
             // dgvNCC
@@ -126,13 +122,14 @@ namespace BTL_WinDow
             this.TenNCC,
             this.DiaChi,
             this.SDT});
-            this.dgvNCC.Location = new System.Drawing.Point(11, 234);
-            this.dgvNCC.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvNCC.Location = new System.Drawing.Point(15, 288);
+            this.dgvNCC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvNCC.MultiSelect = false;
             this.dgvNCC.Name = "dgvNCC";
             this.dgvNCC.RowHeadersWidth = 51;
             this.dgvNCC.RowTemplate.Height = 24;
-            this.dgvNCC.Size = new System.Drawing.Size(610, 122);
+            this.dgvNCC.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvNCC.Size = new System.Drawing.Size(813, 150);
             this.dgvNCC.TabIndex = 9;
             this.dgvNCC.SelectionChanged += new System.EventHandler(this.dgvNCC_SelectionChanged);
             // 
@@ -164,11 +161,10 @@ namespace BTL_WinDow
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(11, 212);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.ForeColor = System.Drawing.Color.Blue;
+            this.label6.Location = new System.Drawing.Point(15, 261);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(164, 20);
+            this.label6.Size = new System.Drawing.Size(210, 25);
             this.label6.TabIndex = 18;
             this.label6.Text = "Số lượng nhà cung cấp:";
             // 
@@ -176,16 +172,16 @@ namespace BTL_WinDow
             // 
             this.lbSL.AutoSize = true;
             this.lbSL.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSL.ForeColor = System.Drawing.Color.White;
-            this.lbSL.Location = new System.Drawing.Point(195, 212);
-            this.lbSL.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbSL.ForeColor = System.Drawing.Color.Blue;
+            this.lbSL.Location = new System.Drawing.Point(260, 261);
             this.lbSL.Name = "lbSL";
-            this.lbSL.Size = new System.Drawing.Size(17, 20);
+            this.lbSL.Size = new System.Drawing.Size(22, 25);
             this.lbSL.TabIndex = 19;
             this.lbSL.Text = "0";
             // 
             // toolStrip1
             // 
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnLamMoi,
             this.btnThemMoi,
@@ -194,7 +190,7 @@ namespace BTL_WinDow
             this.toolStripButton2});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(632, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(843, 27);
             this.toolStrip1.TabIndex = 20;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -203,7 +199,7 @@ namespace BTL_WinDow
             this.btnLamMoi.Image = ((System.Drawing.Image)(resources.GetObject("btnLamMoi.Image")));
             this.btnLamMoi.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnLamMoi.Name = "btnLamMoi";
-            this.btnLamMoi.Size = new System.Drawing.Size(74, 22);
+            this.btnLamMoi.Size = new System.Drawing.Size(91, 24);
             this.btnLamMoi.Text = "Làm mới";
             this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
             // 
@@ -212,7 +208,7 @@ namespace BTL_WinDow
             this.btnThemMoi.Image = ((System.Drawing.Image)(resources.GetObject("btnThemMoi.Image")));
             this.btnThemMoi.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnThemMoi.Name = "btnThemMoi";
-            this.btnThemMoi.Size = new System.Drawing.Size(57, 22);
+            this.btnThemMoi.Size = new System.Drawing.Size(70, 24);
             this.btnThemMoi.Text = "Thêm";
             this.btnThemMoi.Click += new System.EventHandler(this.btnThemMoi_Click);
             // 
@@ -221,7 +217,7 @@ namespace BTL_WinDow
             this.btnSuaThongTin.Image = ((System.Drawing.Image)(resources.GetObject("btnSuaThongTin.Image")));
             this.btnSuaThongTin.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSuaThongTin.Name = "btnSuaThongTin";
-            this.btnSuaThongTin.Size = new System.Drawing.Size(46, 22);
+            this.btnSuaThongTin.Size = new System.Drawing.Size(58, 24);
             this.btnSuaThongTin.Text = "Sửa";
             this.btnSuaThongTin.Click += new System.EventHandler(this.btnSuaThongTin_Click);
             // 
@@ -230,7 +226,7 @@ namespace BTL_WinDow
             this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(47, 22);
+            this.toolStripButton1.Size = new System.Drawing.Size(59, 24);
             this.toolStripButton1.Text = "Xóa";
             // 
             // toolStripButton2
@@ -238,38 +234,20 @@ namespace BTL_WinDow
             this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(76, 22);
+            this.toolStripButton2.Size = new System.Drawing.Size(94, 24);
             this.toolStripButton2.Text = "Tìm kiếm";
             this.toolStripButton2.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
-            // btnThoat
-            // 
-            this.btnThoat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.ForeColor = System.Drawing.Color.Blue;
-            this.btnThoat.Image = global::BTL_WinDow.Properties.Resources.Oxygen_Icons_org_Oxygen_Actions_go_next;
-            this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnThoat.Location = new System.Drawing.Point(513, 81);
-            this.btnThoat.Margin = new System.Windows.Forms.Padding(2);
-            this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(88, 44);
-            this.btnThoat.TabIndex = 17;
-            this.btnThoat.Text = "Thoát";
-            this.btnThoat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThoat.UseVisualStyleBackColor = true;
-            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
-            // 
             // DanhSachNCC
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.ClientSize = new System.Drawing.Size(632, 366);
+            this.ClientSize = new System.Drawing.Size(843, 450);
             this.ControlBox = false;
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.lbSL);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.dgvNCC);
             this.Controls.Add(this.txtSDT);
             this.Controls.Add(this.txtDiaChi);
@@ -279,7 +257,7 @@ namespace BTL_WinDow
             this.Controls.Add(this.label3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "DanhSachNCC";
@@ -304,7 +282,6 @@ namespace BTL_WinDow
         private System.Windows.Forms.TextBox txtDiaChi;
         private System.Windows.Forms.TextBox txtSDT;
         private System.Windows.Forms.DataGridView dgvNCC;
-        private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lbSL;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaNCC;
